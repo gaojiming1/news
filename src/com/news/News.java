@@ -15,7 +15,6 @@ public class News extends FragmentActivity {
 	}
 
 	private void setTopMenu() {
-		FragmentPagerAdapter fragmentPagerAdapter = new NavPageIndicatorAdapter(getSupportFragmentManager());
 		
 	}
 
