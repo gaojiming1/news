@@ -1,22 +1,30 @@
 package com.news;
 
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.view.Menu;
 
-public class news extends Activity {
+public class News extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		setTopMenu();
+	}
+
+	private void setTopMenu() {
+		FragmentPagerAdapter fragmentPagerAdapter = new NavPageIndicatorAdapter(getSupportFragmentManager());
+		
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		// TODO Auto-generated method stub
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+
 
 }
