@@ -13,7 +13,7 @@ public class NavPageIndicatorAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public Fragment getItem(int position) {
-		Fragment fragment = new ItemFragment();
+//		Fragment fragment = new ItemFragment();
 		return null;
 	}
 
